@@ -12,6 +12,7 @@ const program = command('gatekeeper')
       .action(lock),
     command('unlock', '[filename]')
       .description('remove a lockfile with an optional name')
+      .option('a', 'all', null, 'remove all gatekeeper lock files')
       .action(unlock)
   ])
 
