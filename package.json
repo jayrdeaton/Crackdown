@@ -1,0 +1,31 @@
+{
+  "name": "gatekeeper",
+  "version": "1.0.0",
+  "description": "A CLI utility for creating, checking, and removing lock files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "gatekeeper": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayrdeaton/Gatekeeper.git"
+  },
+  "keywords": [
+    "cli",
+    "utility",
+    "lockfile"
+  ],
+  "author": "Jay Deaton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayrdeaton/Gatekeeper/issues"
+  },
+  "homepage": "https://github.com/jayrdeaton/Gatekeeper#readme",
+  "dependencies": {
+    "cosmetic": "^1.2.1",
+    "termkit": "^1.4.9"
+  }
+}
