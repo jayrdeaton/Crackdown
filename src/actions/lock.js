@@ -10,7 +10,7 @@ module.exports = ({ filename }) => {
   // check path
   const path = join(dir, filename || 'lock')
   if (existsSync(path)) {
-    console.log(`${cosmetic.magenta('Gatekeeper')} ${filename ? filename + ' ' : ''}locked`)
+    console.log(`${cosmetic.magenta('Gatekeeper')} ${filename ? filename + ' ' : ''}locked @ ${new Date().toLocaleString()}`)
     process.exit(1)
   } else {
     writeFileSync(path, '')
