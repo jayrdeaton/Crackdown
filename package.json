@@ -26,6 +26,6 @@
   "homepage": "https://github.com/jayrdeaton/Gatekeeper#readme",
   "dependencies": {
     "cosmetic": "^1.2.1",
-    "termkit": "^1.4.9"
+    "termkit": "^1.5.0"
   }
 }
