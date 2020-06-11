@@ -2,7 +2,7 @@ const { existsSync, unlinkSync } = require('fs'),
   { homedir } = require('os'),
   { join } = require('path'),
   rimraf = require('rimraf'),
-  dir = join(homedir(), '.gatekeeper')
+  dir = join(homedir(), '.crackdown')
 
 module.exports = ({ all, filename }) => {
   if (all) {

@@ -1,5 +1,5 @@
 {
-  "name": "gatekeeper",
+  "name": "crackdown",
   "version": "1.0.0",
   "description": "A CLI utility for creating, checking, and removing lock files",
   "main": "index.js",
@@ -7,11 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "gatekeeper": "./index.js"
+    "crackdown": "./index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jayrdeaton/Gatekeeper.git"
+    "url": "git+https://github.com/jayrdeaton/crackdown.git"
   },
   "keywords": [
     "cli",
@@ -21,9 +21,9 @@
   "author": "Jay Deaton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jayrdeaton/Gatekeeper/issues"
+    "url": "https://github.com/jayrdeaton/crackdown/issues"
   },
-  "homepage": "https://github.com/jayrdeaton/Gatekeeper#readme",
+  "homepage": "https://github.com/jayrdeaton/crackdown#readme",
   "dependencies": {
     "cosmetic": "^1.2.1",
     "rimraf": "^3.0.2",

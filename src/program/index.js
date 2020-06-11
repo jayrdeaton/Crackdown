@@ -2,7 +2,7 @@ const { command, option } = require('termkit'),
   { lock, unlock } = require('../actions'),
   { version } = require('../../package.json')
 
-const program = command('gatekeeper')
+const program = command('crackdown')
   .version(version)
   .description('A CLI utility for creating, checking, and removing lock files')
   .commands([
@@ -12,7 +12,7 @@ const program = command('gatekeeper')
       .action(lock),
     command('unlock', '[filename]')
       .description('remove a lockfile with an optional name')
-      .option('a', 'all', null, 'remove all gatekeeper lock files')
+      .option('a', 'all', null, 'remove all crackdown lock files')
       .action(unlock)
   ])
 
