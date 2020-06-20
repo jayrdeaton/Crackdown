@@ -2,7 +2,8 @@ const { existsSync, mkdirSync, unlinkSync, writeFileSync } = require('fs'),
   { homedir } = require('os'),
   { join } = require('path'),
   cosmetic = require('cosmetic'),
-  dir = join(homedir(), '.crackdown')
+  dir = join(homedir(), '.crackdown'),
+  CRACKDOWN = cosmetic.magenta('crackdown')
 
 module.exports = ({ filename }) => {
   // check dir
@@ -10,8 +11,7 @@ module.exports = ({ filename }) => {
   // check path
   const path = join(dir, filename || 'lock')
   if (existsSync(path)) {
-    console.log(`${cosmetic.magenta('crackdown')} ${filename ? filename + ' ' : ''}locked @ ${new Date().toLocaleString()}`)
-    process.exit(1)
+    throw new Error(`crackdown ${filename ? filename + ' ' : ''}is locked`)
   } else {
     writeFileSync(path, '')
   }

@@ -1,15 +1,3 @@
-#!/usr/bin/env node
+const { actions: { lock, unlock } } = require('./src')
 
-const { helpers, program } = require('./src'),
-  { printError } = helpers
-
-const run = async(args) => {
-  try {
-    await program.parse(args)
-  } catch(err) {
-    printError(err)
-  }
-  process.exit()
-}
-
-run(process.argv)
+module.exports = { lock, unlock }
