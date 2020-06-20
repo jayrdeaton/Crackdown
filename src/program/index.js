@@ -14,9 +14,9 @@ const program = command('crackdown')
       .action(({ filename }) => {
         try {
           lock({ filename })
-          console.log(`${CRACKDOWN} ${filename ? filename + ' ' : ''}locked @ ${new Date().toLocaleString()}`)
+          console.log(`${CRACKDOWN} locked ${filename ? filename + ' ' : ''}@ ${new Date().toLocaleString()}`)
         } catch(err) {
-          console.log(`${CRACKDOWN} ${filename ? filename + ' ' : ''}denied @ ${new Date().toLocaleString()}`)
+          console.log(`${CRACKDOWN} denied ${filename ? filename + ' ' : ''}@ ${new Date().toLocaleString()}`)
           process.exit(1)
         }
       }),
@@ -25,7 +25,7 @@ const program = command('crackdown')
       .option('a', 'all', null, 'remove all crackdown lock files')
       .action(({ all, filename }) => {
         unlock({ all, filename })
-        console.log(`${CRACKDOWN} ${filename ? filename + ' ' : ''}unlocked @ ${new Date().toLocaleString()}`)
+        console.log(`${CRACKDOWN} unlocked ${filename ? filename + ' ' : ''}@ ${new Date().toLocaleString()}`)
       })
   ])
 
